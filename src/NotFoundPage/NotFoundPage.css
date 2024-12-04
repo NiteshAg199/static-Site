@@ -1,0 +1,27 @@
+.notFoundContent{
+    height:10vh;
+    text-align: center;
+
+    padding: 10vh;
+    font-size: medium;
+    font-weight: 800;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    color: white;
+    background-color: rgb(58, 58, 220);
+    width: 10vw;
+    height: 5vh;
+    font-size: 1vw;
+}
+.notFoundContainer{
+    width: 100vw;
+    height: 100vh;
+    /* background: url("https://www.digitalmesh.com/blog/wp-content/uploads/2020/05/404-error.jpg")  no-repeat; */
+    background-size: cover;
+     /* grid-template-columns: repeat(2,100vw);  */
+    /* justify-content:; */
+}
