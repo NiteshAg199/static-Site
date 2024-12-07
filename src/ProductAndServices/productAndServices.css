@@ -1,0 +1,11 @@
+.productANdServiceContainer{
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+}
+.productAndServiceHeading{
+    margin-left: 3vw;
+    font-size: 8vh;
+    /* size: ; */
+    font-weight: 900;
+}

@@ -1,0 +1,18 @@
+.whyWeContainer{
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.whyWeHeading{
+    color: blue;
+    font-size: 8vh;
+    font-weight:900;
+    margin-bottom: 8vh;
+}
+.whyWeListItem{
+    color: black;
+    font-size: 3vh;
+    letter-spacing: 0.15vw;
+    font-weight: 500;
+    margin-top: 2.5vh;
+}
