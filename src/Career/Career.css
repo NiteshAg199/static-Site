@@ -19,9 +19,10 @@
 .careerPageHeading {
     color: blue;
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 6.5vw;
     margin-bottom: 5vh;
-    text-align: center; /* Center-align for better visual hierarchy */
+    /* padding-left: 2vw; */
+    text-align: left; /* Center-align for better visual hierarchy */
 }
 
 .careerOpenings {
@@ -85,7 +86,7 @@
     }
 
     .careerPageHeading {
-        font-size: 5vw; /* Increase size for smaller screens */
+        font-size: 5vh; /* Increase size for smaller screens */
     }
 
     .careerOpenings {
