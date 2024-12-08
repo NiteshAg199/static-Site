@@ -1,33 +1,111 @@
-.careerPageContainer{
+
+
+
+/* -------------------Most Newly CSS ---------------------------- */
+
+
+
+.careerPageContainer {
     margin-left: 3vw;
     margin-right: 3vw;
+    min-height: 75vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    box-sizing: border-box; /* Ensures padding/margins don't overflow */
+    max-width: 100%; /* Prevents container from exceeding screen width */
+    overflow-x: hidden; /* Hides horizontal scroll caused by overflow */
 }
-.careerPageHeading{
+
+.careerPageHeading {
     color: blue;
     font-weight: 900;
     font-size: 3vw;
     margin-bottom: 5vh;
+    text-align: center; /* Center-align for better visual hierarchy */
 }
-.careerOpenings{
-    color:rgb(40, 40, 223);
-    font-weight:600;
+
+.careerOpenings {
+    color: rgb(40, 40, 223);
+    font-weight: 600;
     font-size: 2.5vw;
+    margin-bottom: 2vh; /* Add space below headings */
 }
-.careerOpeningRequirement{
+
+.careerOpeningRequirement {
     color: rgb(224, 78, 78);
     font-size: 1.75vw;
 }
-.jobDescriptionBlock{
+
+.jobDescriptionBlock {
     margin-top: 5vh;
 }
-.jobDescriptionHeading{
+
+.jobDescriptionHeading {
     font-weight: 800;
     font-size: 2vw;
     margin-bottom: 2vh;
     color: red;
 }
-.jobDescriptionDetails li{
+
+.jobDescriptionDetails li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 1vh;
     font-size: 1.5vw;
+}
+
+/* Tablet View (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .careerPageHeading {
+        font-size: 4vw; /* Adjust for tablet screens */
+    }
+
+    .careerOpenings {
+        font-size: 3vw;
+    }
+
+    .careerOpeningRequirement {
+        font-size: 2vw;
+    }
+
+    .jobDescriptionHeading {
+        font-size: 3vw;
+    }
+
+    .jobDescriptionDetails li {
+        font-size: 2vw;
+    }
+}
+
+/* Mobile View (768px and below) */
+@media screen and (max-width: 768px) {
+    .careerPageContainer {
+        margin-left: 5vw; /* Increase side margins */
+        margin-right: 5vw;
+        max-width: 90vw; /* Ensure the container width fits within the screen */
+    }
+
+    .careerPageHeading {
+        font-size: 5vw; /* Increase size for smaller screens */
+    }
+
+    .careerOpenings {
+        font-size: 4.5vw;
+        margin-bottom: 3vh; /* Adjust spacing */
+    }
+
+    .careerOpeningRequirement {
+        font-size: 3.5vw;
+    }
+
+    .jobDescriptionBlock {
+        margin-top: 3vh; /* Reduce spacing for compact view */
+    }
+
+    .jobDescriptionHeading {
+        font-size: 4.5vw;
+    }
+
+    .jobDescriptionDetails li {
+        font-size: 3.5vw;
+    }
 }

@@ -1,0 +1,91 @@
+.headerContainer{
+    height: 13vh;
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItems{
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin-right: 5vw;
+}
+.navItem{
+    color: white;
+ margin-right: 2vw;
+}
+
+.navItem:hover{
+    background-color: white;
+    color:blue;
+}
+
+
+/* ---------new css------------------ */
+.headerContainer {
+    height: 13vh;
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw; /* Add padding for consistent spacing */
+}
+
+.navItems {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    margin-right: 5vw;
+    gap: 2vw; /* Add spacing between nav items */
+}
+
+.navItem {
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.navItem:hover {
+    background-color: white;
+    color: blue;
+    padding: 0.5vw; /* Adds padding for hover effect */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Tablet View (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .navItems {
+        gap: 1.5vw; /* Slightly reduce spacing for smaller screens */
+    }
+
+    .navItem {
+        font-size: 1.8vw; /* Adjust font size for tablet */
+    }
+}
+
+/* Mobile View (768px and below) */
+@media screen and (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column; /* Stack header content */
+        align-items: flex-start; /* Align items to the left */
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 2vh 5vw;
+    }
+
+    .navItems {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Align items to the left */
+        margin: 0; /* Reset margin for vertical layout */
+        gap: 1vh; /* Add vertical spacing between items */
+        width: 100%; /* Expand to full width */
+    }
+
+    .navItem {
+        font-size: 4vw; /* Increase font size for readability */
+        margin: 0; /* Reset margin for vertical items */
+        padding: 0.5vh 0; /* Add vertical padding */
+        width: 100%; /* Full width for items */
+        text-align: left; /* Align text to the left */
+    }
+}

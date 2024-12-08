@@ -1,6 +1,5 @@
-.productAndServiceCardContainer{
+/* .productAndServiceCardContainer{
     display: flexbox;
-    /* justify-items: center; */
     align-content:center ;
     height: auto;
     padding-top: 3vh;
@@ -9,7 +8,6 @@
     padding-right: 2vw;
     width: 90vw;
     background-color: blue;
-    /* border:10px solid black; */
     box-shadow: 50px;
     border-radius: 15px;      
     margin-top: 2vh;
@@ -24,4 +22,136 @@
     font-weight: 600;
     color: white;
     font-size: 1.5vw;
+} */
+
+/* justify-items: center; */
+/* border:10px solid black; */
+/* -----------------new css-------------- */
+/* .productAndServiceCardContainer {
+    display: flex; 
+    flex-direction: column; 
+    align-content: center;
+    height: auto; 
+    padding: 3vh 2vw; 
+    width: 100%; 
+    max-width: 90vw; 
+    background-color: blue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh; 
+}
+
+.ProductAndServiceName {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5vw;
+    text-align: left;
+    margin-bottom: 1vh; 
+}
+
+.ProductAndServiceContent {
+    font-weight: 600;
+    color: white;
+    font-size: 1.5vw;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .productAndServiceCardContainer {
+        padding: 3vh 4vw; 
+        max-width: 85vw; 
+        border-radius: 12px; 
+    }
+
+    .ProductAndServiceName {
+        font-size: 2vw; 
+    }
+
+    .ProductAndServiceContent {
+        font-size: 1.3vw; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productAndServiceCardContainer {
+        padding: 2vh 3vw; 
+        max-width: 95vw; 
+        border-radius: 10px; 
+    }
+
+    .ProductAndServiceName {
+        font-size: 5vw; 
+    }
+
+    .ProductAndServiceContent {
+        font-size: 4vw; 
+    }
+} */
+
+
+.productAndServiceCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    padding: 3vh 2vw;
+    width: 100%;
+    max-width: 90vw;
+    background-color: rgb(58, 165, 231); /* Light blue background */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    border-radius: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.ProductAndServiceName {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5vw;
+    text-align: left;
+    margin-bottom: 1.5vh; /* Slightly increased spacing */
+}
+
+.ProductAndServiceContent {
+    font-weight: 600;
+    color: white;
+    font-size: 1.5vw;
+}
+
+/* Tablet View (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .productAndServiceCardContainer {
+        padding: 3vh 4vw;
+        max-width: 85vw;
+        border-radius: 12px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); /* Subtle shadow */
+    }
+
+    .ProductAndServiceName {
+        font-size: 2vw;
+    }
+
+    .ProductAndServiceContent {
+        font-size: 1.3vw;
+    }
+}
+
+/* Mobile View (768px and below) */
+@media screen and (max-width: 768px) {
+    .productAndServiceCardContainer {
+        padding: 2vh 5vw; /* Added left and right margins */
+        max-width: 90vw; /* Ensure it fits smaller screens */
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow for mobile */
+    }
+
+    .ProductAndServiceName {
+        font-size: 5vw;
+        margin-bottom: 2vh; /* More space for smaller screens */
+    }
+
+    .ProductAndServiceContent {
+        font-size: 4vw;
+    }
 }

@@ -2,10 +2,10 @@
     display: flexbox;
     align-items: center;
     justify-items: center;
+    min-height: 75vh;
 }
 .productAndServiceHeading{
     margin-left: 3vw;
     font-size: 8vh;
-    /* size: ; */
     font-weight: 900;
 }

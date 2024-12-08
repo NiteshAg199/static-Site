@@ -1,0 +1,113 @@
+.homePageContainer{
+    background-color: black;
+}
+.NameOfCompany{
+    color: white;
+    text-align: left;
+    padding-left: 1vw;
+    font-weight: 900;
+    font-size: 5vh;
+}
+.contentContainer {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-weight: 800;
+    font-size: 4vh;
+    margin-bottom: 3vh;
+}
+.homeContentsHeading{
+    margin-bottom: 3vh;
+}
+.anotherContent{
+    width: 60vw;
+}
+
+
+/* ----------------------new css---------------------- */
+
+
+/* General Styles */
+.homePageContainer {
+    background-color: black;
+}
+
+.NameOfCompany {
+    color: white;
+    text-align: left;
+    padding-left: 1vw;
+    font-weight: 900;
+    font-size: 5vh;
+}
+
+.contentContainer {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-weight: 800;
+    font-size: 4vh;
+    margin-bottom: 3vh;
+}
+
+.homeContentsHeading {
+    margin-bottom: 3vh;
+}
+
+.anotherContent {
+    line-height: 1.2;
+    width: 60vw;
+}
+.backgroundContainer {
+    width: 100%;  /* Ensure full width */
+    height: 70vh;  /* Default height for larger screens */
+    /* background-image: url(${images});  Use your image */
+    position: relative;
+    background-size: cover;  /* Ensures the image covers the div */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Avoid repeating the image */
+}
+
+/* Mobile View (768px and below) */
+@media screen and (max-width: 768px) {
+    .backgroundContainer {
+        height: 50vh;  /* Reduce height for smaller screens */
+        background-size: auto 100%;  /* Adjust background size for mobile to ensure it fits properly */
+    }
+}
+
+
+/* Tablet View (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .NameOfCompany {
+        font-size: 6vh; /* Increase font size slightly for tablets */
+    }
+
+    .contentContainer {
+        font-size: 3.5vh; /* Adjust font size for tablet screens */
+        left: 10px; /* Adjust position for smaller screens */
+    }
+
+    .anotherContent {
+        width: 70vw; /* Adjust width for tablet view */
+    }
+}
+
+/* Mobile View (768px and below) */
+@media screen and (max-width: 768px) {
+    .NameOfCompany {
+        font-size: 8vw; /* Increase font size for better readability on mobile */
+        padding-left: 4vw; /* Add more padding on the left for mobile */
+    }
+
+    .contentContainer {
+        font-size: 5vw; /* Adjust font size for mobile screens */
+        bottom: 3vh; /* Adjust bottom margin for mobile */
+        left: 5vw; /* Adjust left positioning */
+    }
+
+    .anotherContent {
+        width: 80vw; /* Increase width for mobile view */
+    }
+}

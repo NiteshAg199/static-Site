@@ -1,0 +1,92 @@
+.footerContainer{
+    display:flexbox;
+    justify-items: center;
+    background-color: blue;
+    color: white;
+    min-height: 12vh;
+}
+.footerContactDetails{
+    padding-top: 1vh;
+    display:flexbox;
+    justify-items: left;
+    color: white;
+}
+.emailIconContainer,.webIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------new css---------------- */
+
+.footerContainer {
+    display: flexbox;
+    justify-content: center; /* Maintains your laptop design */
+    align-items: center; /* Centers items vertically */
+    background-color: blue;
+    color: white;
+    min-height: 12vh;
+    padding: 2vh 5vw; /* Padding for laptop view */
+}
+
+.footerContactDetails {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: flex-start; /* Aligns left as per laptop view */
+    align-items: center; /* Centers items vertically */
+    color: white;
+    margin-bottom: 1vh;
+    gap: 1vw; /* Adds spacing between items */
+}
+
+.emailIconContainer,
+.webIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1vw; /* Adds spacing for laptop */
+}
+
+/* Tablet View (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column; /* Stacks content vertically */
+        text-align: center; /* Center-aligns text */
+        padding: 3vh 4vw; /* Increases padding for spacing */
+        min-height: 15vh; /* Slightly larger height for tablet view */
+    }
+
+    .footerContactDetails {
+        justify-content: center; /* Aligns content to center */
+        padding: 2vh 0; /* Adds vertical spacing */
+        gap: 2vw; /* Increases spacing between items */
+    }
+
+    .emailIconContainer,
+    .webIconContainer {
+        margin: 1vh 0; /* Adds vertical spacing for icons */
+    }
+}
+
+/* Mobile View (768px and below) */
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column; /* Stacks content vertically */
+        text-align: center; /* Center-aligns text */
+        padding: 1vh 5vw; /* Adds more padding */
+        min-height: 8vh; /* Larger height for smaller screens */
+    }
+
+    .footerContactDetails {
+        justify-content: center; /* Centers items */
+        flex-direction: column; /* Stacks details vertically */
+        gap: 2.5vw; /* Adds more spacing between items */
+    }
+
+    .emailIconContainer,
+    .webIconContainer {
+        margin: 0.1vh 0; /* Adds vertical spacing for icons */
+    }
+}

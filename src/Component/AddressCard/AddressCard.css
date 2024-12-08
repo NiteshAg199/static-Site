@@ -1,11 +1,9 @@
-.addressCardContainer{
+/* .addressCardContainer{
     display: flexbox;
-    /* justify-items: center; */
     align-content:center ;
     height: 40vh;
     width: 40vw;
-    background-color: blue;
-    /* border:10px solid black; */
+    background-color: rgb(58, 165, 231);
     box-shadow: 50px;
     border-radius: 30px;
 }
@@ -14,7 +12,6 @@
     font-weight: 900;
     font-size: 2.5vw;
     text-align: left;
-    /* margin-top: 2vh; */
 }
 .addressFieldsBox{
     margin-left: 3vw;
@@ -28,8 +25,165 @@
     font-weight: 600;
     color: white;
     font-size: 1.5vw;
-    /* margin-top: 2vh; */
 }
 .addressCardLocationMinorAddress{
     font-weight: 700;
+} */
+/* justify-items: center; */
+/* border:10px solid black; */
+/*------------------------new css-----------------------------*/
+/*.addressCardContainer {
+    display: flex;
+    align-content: center;
+    height: 40vh;
+    width: 40vw;
+    background: linear-gradient(135deg, rgb(58, 165, 231), rgb(45, 136, 191)); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 
+                0px 6px 20px rgba(0, 0, 0, 0.19); 
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.addressCardLocation {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+.addressFieldsBox {
+    margin-left: 3vw;
+}
+
+.addressFieldsBox div {
+    margin-bottom: 1vh;
+    margin-top: 4vh;
+    letter-spacing: 0.3vw;
+}
+
+.addressCardLocationidentify,
+.addressCardLocationMinorAddress,
+.addressCardLocationCityAndPinCode {
+    font-weight: 600;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.addressCardLocationMinorAddress {
+    font-weight: 700;
+} */
+
+/* Default styles (for large screens like desktops) */
+.addressCardContainer {
+    display: flex;
+    align-content: center;
+    height: 40vh;
+    width: 40vw;
+    background: linear-gradient(135deg, rgb(58, 165, 231), rgb(45, 136, 191)); /* Textured gradient */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 
+                0px 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.addressCardLocation {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+.addressFieldsBox {
+    margin-left: 3vw;
+}
+
+.addressFieldsBox div {
+    margin-bottom: 1vh;
+    margin-top: 4vh;
+    letter-spacing: 0.3vw;
+}
+
+.addressCardLocationidentify,
+.addressCardLocationMinorAddress,
+.addressCardLocationCityAndPinCode {
+    font-weight: 600;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.addressCardLocationMinorAddress {
+    font-weight: 700;
+}
+
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .addressCardContainer {
+        height: 30vh;
+        width: 40vw; /* Adjust width for smaller screens */
+    }
+
+    .addressCardLocation {
+        font-size: 2vw; /* Reduce font size */
+    }
+
+    .addressCardLocationidentify,
+    .addressCardLocationMinorAddress,
+    .addressCardLocationCityAndPinCode {
+        font-size: 1.3vw;
+    }
+
+    .addressFieldsBox {
+        margin-left: 2vw; /* Adjust spacing */
+    }
+}
+
+/* Mobile View (480px - 768px) */
+@media screen and (max-width: 768px) {
+    .addressCardContainer {
+        height: auto; /* Allow height to adjust dynamically */
+        width: 80vw;
+        padding: 15px;
+    }
+
+    .addressCardLocation {
+        font-size: 4vw;
+    }
+
+    .addressCardLocationidentify,
+    .addressCardLocationMinorAddress,
+    .addressCardLocationCityAndPinCode {
+        font-size: 2.5vw;
+    }
+
+    .addressFieldsBox {
+        margin-left: 1.5vw;
+    }
+
+    .addressFieldsBox div {
+        margin-top: 2vh;
+    }
+}
+
+/* Small Mobile View (up to 480px) */
+@media screen and (max-width: 480px) {
+    .addressCardContainer {
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px; /* Smaller border radius */
+    }
+
+    .addressCardLocation {
+        font-size: 5vw;
+    }
+
+    .addressCardLocationidentify,
+    .addressCardLocationMinorAddress,
+    .addressCardLocationCityAndPinCode {
+        font-size: 3vw;
+    }
+
+    .addressFieldsBox {
+        margin-left: 1vw;
+    }
 }
