@@ -39,9 +39,9 @@ const data={
                         "cityAndPinCode":"Chennai-603 103"          
                     },{
                         "location":"Bangalore",
-                        "minorAddress":"Brigade IRV Center,",
-                        "identify":"Nallurhalli Road,Whitefield,",
-                        "cityAndPinCode":"Bangalore -560 066"
+                        "minorAddress":"45, Nallurhalli Road,Whitefield,",
+                        "identify":"Bangalore -560 066",
+                        "cityAndPinCode":""
                     }   
                 ]
         }

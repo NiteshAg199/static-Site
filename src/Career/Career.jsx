@@ -4,7 +4,7 @@ const Career=()=>{
     return(
         <>
             <div className="careerPageContainer">
-                <div className="careerPageHeading">Careers</div>
+                <div className="careerPageHeading">Career</div>
                 <div className="careerOpenings">Part Time /Full Time IT Trainer- (Chennai/Bangalore/Hyderabad)- 15 Openings</div>
                 <div className="careerOpeningRequirement">(Mobile Automation-Android & IOS, Selenium & Playwright, Performance & API Testing, Tosca automation, Cyber Security, DevOps, Data Science, Artificial Intelligence, Big Data, Digital Marketing, Internet of Things )</div>
                 <div className="jobDescriptionBlock">

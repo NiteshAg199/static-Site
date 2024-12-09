@@ -5,7 +5,7 @@ const HomePage=()=>{
     return(
         <>
             <div className="homePageContainer">
-                <div className="NameOfCompany">Cloud Insight Technologies.</div>
+                <div className="NameOfCompany">Cloud Insight Technologies</div>
                 <div className="backgroundContainer" style={{backgroundImage:`url(${images})`}}>
                 <div className="contentContainer">
                     <div className="homeContentsHeading">Your One stop Solution</div>
